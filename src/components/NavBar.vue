@@ -17,7 +17,7 @@
         <b-nav-item to="/services/content" active-class="active-link" class="text-light fs-5">
           <i class="fa fa-file-alt mr-2"></i> المحتوى
         </b-nav-item>
-        <b-nav-item to="/services/development" active-class="active-link" class="text-light fs-5">
+        <b-nav-item to="/services/Programming" active-class="active-link" class="text-light fs-5">
           <i class="fa fa-code mr-2"></i> البرمجة
         </b-nav-item>
         <b-nav-item to="/contact" active-class="active-link" class="text-light fs-5">اتصل بنا</b-nav-item>

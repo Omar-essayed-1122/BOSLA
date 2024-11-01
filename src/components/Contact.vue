@@ -65,30 +65,21 @@
         </b-alert>
       </form>
     </main>
-
-    <footer class="w-full p-5 text-center bg-black mt-auto">
-      <p class="neon">تابعونا على وسائل التواصل الاجتماعي</p>
-      <div class="flex justify-center mt-2">
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-youtube"></i></a>
-      </div>
-    </footer>
+    <Media />
   </div>
 </template>
 
 <script>
 import { BAlert, BButton, BFormInput, BFormSelect, BFormTextarea } from 'bootstrap-vue-3';
-
+import Media from "./Media.vue";
 export default {
   components: {
     BAlert,
     BButton,
     BFormInput,
     BFormSelect,
-    BFormTextarea
+    BFormTextarea,
+    Media,
   },
   data() {
     return {

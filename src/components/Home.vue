@@ -1,14 +1,14 @@
 <template>
-  <div class="flex flex-col items-center justify-center min-h-screen bg-black text-white">
+  <div lang="ar" dir="rtl" class="flex flex-col items-center justify-center min-h-screen bg-black text-white">
     <!-- Header -->
     <header class="w-full p-5 text-center bg-black">
       <h1 class="text-4xl font-bold neon type" data-aos="fade-down">EL BOSLA _ Digital Marketing</h1>
-      <p class="mt-2 text-xl" data-aos="fade-down">شركة تسويق موجودين في سوق العمل منذ 6 شهور</p>
+      <p class="mt-2 text-xl" data-aos="fade-down">نحن Bosla نقدم حلول رقميه متميزه ولدينا خبره كبيره في المجال</p>
     </header>
 
     <!-- Main Content -->
     <main class="flex flex-col items-center p-5">
-      <h2 class="mt-10 text-3xl font-semibold" data-aos="fade-up">المدير التنفيذي / يوسف علاء</h2>
+      <h2 class="mt-10 text-3xl font-semibold" data-aos="fade-up">CEO | YOUSEF ALaa</h2>
       <h3 class="mt-2 text-xl" data-aos="fade-up">صانع محتوي وهذه طريقتنا الأساسية في التسويق</h3>
 
       <section class="mt-10" data-aos="fade-up">
@@ -62,16 +62,7 @@
     <hr class="my-10 border-purple-500" />
 
     <!-- Footer -->
-    <footer class="w-full p-5 text-center bg-black mt-auto">
-      <p class="neon">تابعونا على وسائل التواصل الاجتماعي</p>
-      <div class="flex justify-center mt-2">
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="mx-2 text-purple-500 hover:text-white"><i class="fab fa-youtube"></i></a>
-      </div>
-    </footer>
+   <Media />
   </div>
 </template>
 
@@ -81,11 +72,13 @@ import 'aos/dist/aos.css';
 import Typed from 'typed.js';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
-
+import Media from "./Media.vue";
 export default {
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    Media
+    
   },
   data() {
     return {
