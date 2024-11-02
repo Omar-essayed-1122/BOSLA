@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="w-full p-5 text-center bg-black">
       <h1 class="text-4xl font-bold neon type" data-aos="fade-down">EL BOSLA _ Digital Marketing</h1>
-      <p class="mt-2 text-xl" data-aos="fade-down">نحن Bosla نقدم حلول رقميه متميزه ولدينا خبره كبيره في المجال</p>
+      <p class="mt-2 text-xl" data-aos="fade-down">نحن نقدم حلول رقميه متميزه ولدينا خبره كبيره في المجال</p>
     </header>
 
     <!-- Main Content -->
