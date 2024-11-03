@@ -144,7 +144,6 @@ export default {
 .type{
   min-height:70px;
 }
-
 ul {
   display: flex;
   flex-direction: column; /* يجعل العناصر في عمود */
@@ -159,6 +158,6 @@ li {
   padding: 10px; /* إضافة حشوة */
 }
 i{
- margin:5px
+ margin:5px;
 }
 </style>
