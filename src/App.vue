@@ -6,11 +6,15 @@
 <script>
   import NavBar from"./components/NavBar.vue";
   import FotterMe from"./components/FotterMe.vue";
+  
+  
+  
   export default{
     name:"App",
     components:{
       NavBar,
-      FotterMe
+      FotterMe,
+      
     }
   }
 </script>

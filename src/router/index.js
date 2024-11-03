@@ -12,6 +12,8 @@ import ContentV from '../views/ContentV.vue'
 import ProgrammingV from '../views/ProgrammingV.vue'
 
 
+
+
 const routes = [
   {
     path: '/',

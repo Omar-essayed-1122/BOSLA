@@ -3,23 +3,23 @@
     <!-- Header -->
     <header class="w-full p-5 text-center bg-black">
       <h1 class="text-4xl font-bold neon type" data-aos="fade-down">EL BOSLA _ Digital Marketing</h1>
-      <p class="mt-2 text-xl" data-aos="fade-down">نحن Bosla نقدم حلول رقميه متميزه ولدينا خبره كبيره في المجال</p>
+      <p class="mt-2 text-xl" data-aos="fade-down">نحن نقدم حلول رقميه متميزه ولدينا خبره كبيره في المجال</p>
     </header>
 
     <!-- Main Content -->
     <main class="flex flex-col items-center p-5">
       <h2 class="mt-10 text-3xl font-semibold" data-aos="fade-up">CEO | YOUSEF ALaa</h2>
-      <h3 class="mt-2 text-xl" data-aos="fade-up">صانع محتوي وهذه طريقتنا الأساسية في التسويق</h3>
+      <h3 class="mt-2 text-xl" data-aos="fade-up">صانع محتوي تعليمي</h3>
 
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">نقدم خدمات التسويق الالكتروني</h2>
-        <ul class="mt-5 list-disc list-inside">
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>الجرافيك ديزاين بجميع أنواعه</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>التسويق</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>إدارة المحتوي</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>إنشاء المواقع</li>
-        </ul>
-      </section>
+<section class="mt-10" data-aos="fade-up">
+  <h2 class="text-2xl font-bold">نقدم خدمات التسويق الالكتروني</h2>
+  <ul class="mt-5 list-disc list-inside flex-column">
+    <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>الجرافيك ديزاين بجميع أنواعه</li>
+    <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>التسويق</li>
+    <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>إدارة المحتوي</li>
+    <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>إنشاء المواقع</li>
+  </ul>
+</section>
 
       <!-- Vision and Mission -->
       <section class="mt-10" data-aos="fade-up">
@@ -143,5 +143,22 @@ export default {
 }
 .type{
   min-height:70px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column; /* يجعل العناصر في عمود */
+  gap: 10px; /* المسافة بين العناصر */
+}
+
+li {
+  display: flex; /* يجعل العناصر داخل li مرنة */
+  align-items: center; /* يوسّط المحتوى عموديًا */
+  height: 50px; /* تحدد ارتفاع ثابت لكل عنصر */
+  border: 1px solid #ccc; /* إضافة حد لتوضيح الشكل */
+  padding: 10px; /* إضافة حشوة */
+}
+i{
+ margin:5px
 }
 </style>
