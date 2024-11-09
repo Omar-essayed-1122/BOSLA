@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
+import VueGtag from 'vue-gtag';
 
 // استيراد Tailwind CSS
 import './assets/css/tailwind.css';
@@ -33,6 +34,8 @@ app.use(router);
 app.use(BootstrapVue3); // استخدام BootstrapVue 3
 app.use(Vuetify);       // استخدام Vuetify
 app.use(ElementPlus);   // استخدام Element Plus
-
+app.use(VueGtag, {
+  config: { id: 'G-ZRWXVV69P4' } // ضع هنا معرف التتبع الخاص بك
+}, router);
 // تركيب التطبيق
 app.mount('#app');
