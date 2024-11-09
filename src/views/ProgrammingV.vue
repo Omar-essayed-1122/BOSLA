@@ -1,12 +1,14 @@
 <template>
   <Programming />
 </template>
+
 <script>
-  import Programming from "../components/Programming.vue";
-  export default{
-    name:"ProgrammingV",
-    components:{
-       Programming
-    },
+import { defineAsyncComponent } from 'vue';
+
+export default {
+  name: "ProgrammingV",
+  components: {
+    Programming: defineAsyncComponent(() => import("../components/Programming.vue"))
   }
+}
 </script>

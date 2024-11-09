@@ -14,14 +14,24 @@
           :key="index" 
           class="offer-card bg-white text-black rounded-lg shadow-md p-4"
         >
-    
+          <img 
+            :src="offer.image" 
+            :alt="offer.title" 
+            class="w-full h-56 object-cover mb-4" 
+            loading="lazy"  <!-- استخدام التحميل الكسول -->
+          />
           <h3 class="text-xl font-bold mb-2">{{ offer.title }}</h3>
           <p class="text-gray-700 mb-4">{{ offer.description }}</p>
           <ul class="text-sm text-gray-600 mb-4">
             <li v-for="(feature, index) in offer.features" :key="index">- {{ feature }}</li>
           </ul>
           <p class="text-lg font-bold text-green-600 mb-4">السعر: {{ offer.price }}</p>
-          <router-link to="/contact" class="mt-4 px-4 py-2 bg-blue text-white rounded hover:bg-blue-700 transition">اطلب الآن</router-link>
+          <router-link 
+            to="/contact" 
+            class="mt-4 px-4 py-2 bg-blue text-white rounded hover:bg-blue-700 transition"
+          >
+            اطلب الآن
+          </router-link>
         </div>
       </div>
     </section>
@@ -42,7 +52,7 @@ export default {
             "دعم فني لمدة شهر"
           ],
           price: "1500 ج.م",
-          image: "@/assets/res/img/Deals/Game.png"
+          image: require("@/assets/res/img/Deals/Game.png") // استخدام require لتحميل الصور بشكل ديناميكي
         },
         {
           title: "تحسين تجربة المستخدم لموقعك",
@@ -53,7 +63,7 @@ export default {
             "زيادة ولاء العملاء"
           ],
           price: "800 ج.م",
-          image: "@/assets/res/img/offers/offer2.jpg"
+          image: require("@/assets/res/img/offers/offer2.jpg")
         },
         {
           title: "تصميم واجهة موقع جذابة",
@@ -64,7 +74,7 @@ export default {
             "متوافق مع محركات البحث"
           ],
           price: "1200 ج.م",
-          image: "@/assets/res/img/offers/offer3.jpg"
+          image: require("@/assets/res/img/offers/offer3.jpg")
         }
       ]
     };

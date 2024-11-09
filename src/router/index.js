@@ -1,11 +1,13 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeV from '../views/HomeView.vue'
-import ContactV from '../views/ContactV.vue'
-import MarketingV from '../views/MarketingV.vue'
-import DesignV from '../views/DesignV.vue'
-import ContentV from '../views/ContentV.vue'
-import ProgrammingV from '../views/ProgrammingV.vue'
-import Deals from '../views/Deals.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+
+// استخدام التحميل الكسول للمكونات
+const HomeV = () => import('../views/HomeView.vue');
+const ContactV = () => import('../views/ContactV.vue');
+const MarketingV = () => import('../views/MarketingV.vue');
+const DesignV = () => import('../views/DesignV.vue');
+const ContentV = () => import('../views/ContentV.vue');
+const ProgrammingV = () => import('../views/ProgrammingV.vue');
+const Deals = () => import('../views/Deals.vue');
 
 const routes = [
   {
@@ -71,23 +73,23 @@ const routes = [
       description: 'اكتشف العروض المميزة التي نقدمها في خدماتنا المتنوعة، واستفد من خصومات خاصة على خدماتنا في التسويق، التصميم، والبرمجة.'
     }
   },
-]
+];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(), // استخدم history بدلاً من hash للحصول على URL نظيف
   routes
-})
+});
 
 // تحديث العنوان والوصف بعد كل تنقل
 router.afterEach((to) => {
   // تحديث عنوان الصفحة
-  document.title = to.meta.title || 'البوصلة'
+  document.title = to.meta.title || 'البوصلة';
 
   // تحديث الوصف لـ SEO
-  const description = document.querySelector('meta[name="description"]')
+  const description = document.querySelector('meta[name="description"]');
   if (description) {
-    description.setAttribute('content', to.meta.description || 'مرحبًا بكم في البوصلة، أفضل الخدمات الرقمية للشركات الصغيرة والمتوسطة.')
+    description.setAttribute('content', to.meta.description || 'مرحبًا بكم في البوصلة، أفضل الخدمات الرقمية للشركات الصغيرة والمتوسطة.');
   }
-})
+});
 
-export default router
+export default router;

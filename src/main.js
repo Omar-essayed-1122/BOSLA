@@ -1,8 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import store from './store';
-import VueGtag from 'vue-gtag';
 
 // استيراد Tailwind CSS
 import './assets/css/tailwind.css';
@@ -12,30 +10,25 @@ import '@fortawesome/fontawesome-free/css/all.css';
 // استيراد animate.css
 import 'animate.css';
 
-// استيراد BootstrapVue 3
-import { BootstrapVue3 } from 'bootstrap-vue-3';
-import 'bootstrap/dist/css/bootstrap.css';
-
-// استيراد Vuetify
-import Vuetify from 'vuetify';
-import 'vuetify/dist/vuetify.min.css';
-
-// استيراد Element Plus
-import ElementPlus from 'element-plus';
-import 'element-plus/theme-chalk/index.css';
-
-// Cairo font
-
+// تحميل BootstrapVue 3 بشكل كسول
 const app = createApp(App);
 
-// استخدام المكتبات
-app.use(store);
+
 app.use(router);
-app.use(BootstrapVue3); // استخدام BootstrapVue 3
-app.use(Vuetify);       // استخدام Vuetify
-app.use(ElementPlus);   // استخدام Element Plus
-app.use(VueGtag, {
-  config: { id: 'G-ZRWXVV69P4' } // ضع هنا معرف التتبع الخاص بك
-}, router);
+
+if (process.client) {
+  // استخدام BootstrapVue 3 بشكل كسول
+  import('bootstrap-vue-3').then((BootstrapVue3) => {
+    app.use(BootstrapVue3);
+  });
+
+  // تحميل Google Analytics بشكل كسول
+  import('vue-gtag').then((VueGtag) => {
+    app.use(VueGtag, {
+      config: { id: 'G-ZRWXVV69P4' }
+    }, router);
+  });
+}
+
 // تركيب التطبيق
 app.mount('#app');

@@ -1,12 +1,14 @@
 <template>
   <Marketing />
 </template>
+
 <script>
-  import Marketing from "../components/Marketing.vue";
-  export default{
-    name:"MarketingV",
-    components:{
-       Marketing
-    },
+import { defineAsyncComponent } from 'vue';
+
+export default {
+  name: "MarketingV",
+  components: {
+    Marketing: defineAsyncComponent(() => import("../components/Marketing.vue"))
   }
+}
 </script>

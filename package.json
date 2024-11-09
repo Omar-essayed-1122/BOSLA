@@ -16,7 +16,6 @@
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "bootstrap-vue-3": "^0.5.1",
-    "element-plus": "^2.8.7",
     "postcss": "^8.4.47",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.14",
@@ -24,9 +23,7 @@
     "typed.js": "^2.1.0",
     "vue": "^3.2.13",
     "vue-gtag": "^2.0.1",
-    "vue-router": "^4.0.3",
-    "vuetify": "^3.7.3",
-    "vuex": "^4.0.0"
+    "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "~5.0.0",

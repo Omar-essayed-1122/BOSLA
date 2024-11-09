@@ -1,37 +1,38 @@
 <template>
-<footer class="footer">
-  <div class="footer-container">
-    <!-- القسم الأول: معلومات عن الشركة -->
-    <div class="footer-section">
-      <h5>Bosla.Co</h5>
-      <p>نحن نقدم خدمات التسويق، التصميم، كتابة المحتوى، والبرمجة بشكل احترافي.</p>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- القسم الأول: معلومات عن الشركة -->
+      <div class="footer-section">
+        <h5>Bosla.Co</h5>
+        <p>نحن نقدم خدمات التسويق، التصميم، كتابة المحتوى، والبرمجة بشكل احترافي.</p>
+      </div>
+
+      <!-- القسم الثالث: تواصل معنا -->
+      <div class="footer-section">
+        <h5>تواصل معنا</h5>
+        <p><i class="fa fa-phone"></i> +20 1212540775</p>
+        <p><i class="fa fa-phone"></i> +20 1552480067</p>
+        <p><i class="fa fa-envelope"></i> bosla.co.1@gmail.com</p>
+        <p><i class="fa fa-map-marker-alt"></i> الإسكندرية، مصر</p>
+      </div>
     </div>
 
-    <!-- القسم الثالث: تواصل معنا -->
-    <div class="footer-section">
-      <h5>تواصل معنا</h5>
-      <p><i class="fa fa-phone"></i> +20 1212540775</p>
-      <p><i class="fa fa-phone"></i> +20 1552480067</p>
-      <p><i class="fa fa-envelope"></i> bosla.co.1@gmail.com</p>
-      <p><i class="fa fa-map-marker-alt"></i> الإسكندرية، مصر</p>
+    <!-- حقوق الطبع والنشر -->
+    <div class="footer-copyright">
+      <p>&copy; جميع الحقوق محفوظه بوصله للحلول الالكترونيه</p>
     </div>
-  </div>
-
-  <!-- حقوق الطبع والنشر -->
-  <div class="footer-copyright">
-    <p>&copy; جميع الحقوق محفوظه بوصله للحلول الالكترونيه</p>
-  </div>
-</footer>
+  </footer>
 </template>
 
-<style>
-  /* تصميم الفوتر */
+<style scoped>
+  /* تحسين تصميم الفوتر */
 .footer {
   background-color: #4b006e; /* لون خلفية بنفسجي داكن */
   color: #ffffff; /* لون النص */
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .footer-container {
@@ -46,6 +47,7 @@
   flex: 1;
   min-width: 250px;
   margin: 10px;
+  box-sizing: border-box;
 }
 
 .footer-section h5 {
@@ -57,6 +59,7 @@
 .footer-section p {
   font-size: 0.9em;
   line-height: 1.5;
+  word-wrap: break-word; /* منع التمدد الأفقي للنص */
 }
 
 .footer-links {
@@ -71,7 +74,7 @@
 .footer-links a {
   color: #d1d1d1;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
@@ -86,5 +89,20 @@
   margin-top: 20px;
   font-size: 0.9em;
   color: #d1d1d1;
+}
+
+@media (min-width: 768px) {
+  /* تحسين تصميم الفوتر في الشاشات الكبيرة */
+  .footer-container {
+    justify-content: space-around;
+  }
+
+  .footer-section h5 {
+    font-size: 1.5em; /* تكبير العناوين في الشاشات الكبيرة */
+  }
+
+  .footer-section p {
+    font-size: 1em;
+  }
 }
 </style>

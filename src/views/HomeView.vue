@@ -1,15 +1,14 @@
 <template>
   <Home />
-  
 </template>
 
 <script>
-  import Home from"../components/Home.vue";
-  export default{
-    name:"HomeV",
-    components:{
-     Home,
-     
-    }
+import { defineAsyncComponent } from 'vue';
+
+export default {
+  name: "HomeV",
+  components: {
+    Home: defineAsyncComponent(() => import('../components/Home.vue'))
   }
+}
 </script>

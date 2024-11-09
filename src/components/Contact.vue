@@ -6,13 +6,14 @@
     </header>
 
     <main class="flex flex-col items-center p-5">
-      <form @submit.prevent="submitForm" class="w-full max-w-md">
+      <form @submit.prevent="submitForm" class="w-full max-w-md" aria-labelledby="contact-form">
         <div class="mt-4">
           <label for="service" class="block text-lg">اختر الخدمة:</label>
           <b-form-select
             v-model="selectedService"
             :options="services"
             required
+            aria-required="true"
             class="mt-2"
           ></b-form-select>
         </div>
@@ -24,6 +25,7 @@
             type="email"
             placeholder="أدخل بريدك الإلكتروني"
             required
+            aria-required="true"
             class="mt-2"
           ></b-form-input>
         </div>
@@ -35,6 +37,7 @@
             type="tel"
             placeholder="أدخل رقم هاتفك"
             required
+            aria-required="true"
             class="mt-2"
           ></b-form-input>
         </div>
@@ -46,6 +49,7 @@
             placeholder="اكتب استفسارك هنا"
             rows="3"
             required
+            aria-required="true"
             class="mt-2"
           ></b-form-textarea>
         </div>
@@ -72,6 +76,7 @@
 <script>
 import { BAlert, BButton, BFormInput, BFormSelect, BFormTextarea } from 'bootstrap-vue-3';
 import Media from "./Media.vue";
+
 export default {
   components: {
     BAlert,
