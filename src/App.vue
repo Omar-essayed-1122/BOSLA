@@ -19,6 +19,21 @@
   }
 </script>
 <style lang="scss">
+  @font-face {
+    font-family: 'Cairo'; /* اسم الخط الذي تريد استخدامه */
+    src: url('@/assets/Cairo/Cairo-VariableFont_slnt,wght.ttf') format('truetype'); /* رابط للخط وامتداده */
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  font-family: 'Cairo',sans-serif;
+font-size:20px;
+font-weight:700;
+}
+
+  body{
+   background:#330099;
+  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,5 +53,17 @@ nav {
       color: #42b983;
     }
   }
+}
+@media (min-width:768px){
+  *{
+    font-size:33px;
+  }
+}
+.rounded , .rounded-lg{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+h1{
+  font-size:24px;
 }
 </style>

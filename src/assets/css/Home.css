@@ -1,0 +1,44 @@
+.about {
+ font-size: 40px
+}
+
+.body {
+ font-family: 'Cairo', sans-serif;
+ background-color: #000000;
+ color: #ffffff;
+ font-size: 37px;
+}
+h3{
+ color:#fff;
+ font-weight: 1000;
+}
+.about_us {
+ background: linear-gradient(90deg, #3333cc, #330099)
+
+
+}
+
+.carousel {
+ background: #FFFFFF;
+
+}
+
+.carousel-container {
+ height: 50%;
+ position: relative;
+ }
+ .points{
+  position: absolute;
+  top: 90%;
+  background: #FFFFFF;
+ }
+
+ .carousel-images {
+  background: #fff;
+ }
+ .about-co p{
+   font-size: 32px;
+ }
+ p{
+  font-size: 25px;
+ }

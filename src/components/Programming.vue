@@ -1,82 +1,65 @@
 <template>
-  <div class="flex flex-col items-center justify-center min-h-screen bg-black text-white">
-    <!-- Header -->
-    <header class="w-full p-5 text-center bg-black">
-      <h1 class="text-4xl font-bold neon" data-aos="fade-down">خدمات البرمجة</h1>
-      <p class="mt-2 text-xl" data-aos="fade-down">نقدم مجموعة شاملة من خدمات البرمجة لتلبية احتياجاتكم الرقمية.</p>
-    </header>
+  <div class="body">
+     <header class="text-center py-4">
+  <img src="@/assets/res/img/icons/Web Developer.png" alt="">
+ </header>
 
-    <!-- Main Content -->
-    <main class="flex flex-col items-center p-5">
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">ما هي خدمات البرمجة التي نقدمها؟</h2>
-        <p class="mt-2">نحن نقدم جميع خدمات تطوير الويب بدءًا من تصميم المواقع إلى تطوير التطبيقات.</p>
-      </section>
+ <!-- مقدمة -->
+ <section class="text-center py-8 px-4">
+  <h1 class="text-3xl font-bold mb-2">البوصلة - تصميم وبرمجة المواقع الإلكترونية</h1>
+  <p class="mb-4">نحن نقدم حلول مبتكرة وفعالة لتطوير مواقع إلكترونية عصرية وجذابة، تناسب احتياجات عملك وتساعدك على التواصل مع عملائك بشكل أفضل.</p>
+ </section>
 
-      <!-- Services Offered -->
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">خدمات تطوير الويب</h2>
-        <ul class="mt-5 list-disc list-inside">
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تطوير مواقع الويب الديناميكية (Dynamic Websites)</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تطوير تطبيقات الويب (Web Applications)</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تقديم خدمات بناء chatbots لخدمة العملاء (Chatbot Development)</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تطوير واجهات المستخدم (UI Development)</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تحسين محركات البحث (SEO Optimization)</li>
-        </ul>
-      </section>
+ <!-- لماذا تحتاج موقع إلكتروني؟ -->
+ <section class="bg-white text-black text-center py-8 px-4 rounded-lg mb-4">
+  <h2 class="text-2xl font-bold mb-4">لماذا تحتاج إلى موقع إلكتروني أو متجر إلكتروني؟</h2>
+  <p class="mb-4">في عالم اليوم، يعتبر الموقع الإلكتروني واجهة أساسية لأي شركة أو نشاط تجاري. فهو يساعدك على الوصول إلى جمهور أوسع ويعزز من مصداقيتك المهنية ويزيد من فرص التفاعل مع عملائك.</p>
+  <p class="mb-4">كما يسهل عملية البيع والتواصل ويقدم تجربة فريدة للعملاء، مما يرفع من ولائهم لعلامتك التجارية.</p>
+  <img alt="صورة متجر إلكتروني" class="mx-auto mt-4" src="@/assets/res/img/icons/8.jpg" width="300" style="border-radius: 10px" />
+ </section>
 
-      <!-- Technologies Used -->
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">التقنيات التي نستخدمها</h2>
-        <p class="mt-2">نستخدم أحدث التقنيات لبناء حلول برمجية مميزة:</p>
-        <ul class="mt-5 list-disc list-inside">
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>Vue.js</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>Express.js</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>Node.js</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>Multer</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>Animate.css</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>Bootstrap</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>Tailwind CSS</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>AOS Library</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>Font Awesome</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>MySQL DB</li>
-        </ul>
-      </section>
+ <!-- خدماتنا -->
+ <section class="text-center py-8 px-4">
+  <h2 class="text-2xl font-bold mb-4">خدماتنا</h2>
+  <div class="flex flex-col md:flex-row md:space-x-8 items-center space-y-4 md:space-y-0">
+   <div class="text-center p-4 bg-black rounded-lg">
+    <img alt="تصميم واجهات" class="mx-auto mb-2" src="@/assets/res/img/icons2/1000518859-removebg-preview.png" width="370" />
+    <h3 class="text-xl font-semibold mb-2">تصميم واجهات مستخدم</h3>
+    <p>تصميمات عصرية وجذابة تضمن تجربة مستخدم سلسة وسهلة التنقل.</p>
+   </div>
+   <div class="text-center p-4 bg-black rounded-lg">
+    <img alt="برمجة مواقع" class="mx-auto mb-2" src="@/assets/res/img/icons2/Custom-software-development-it-magnet-soft.png" width="240" />
+    <h3 class="text-xl font-semibold mb-2">برمجة مواقع متكاملة</h3>
+    <p>تطوير مواقع إلكترونية باستخدام أحدث التقنيات لتلبية كافة احتياجات عملك.</p>
+   </div>
+   <div class="text-center p-4 bg-black rounded-lg">
+    <img alt="تجربة المستخدم" class="mx-auto mb-2" src="@/assets/res/img/icons2/1_FUgSi8RZKjq5rAGbKzATqw-removebg-preview.png" width="240" />
+    <h3 class="text-xl font-semibold mb-2">تحسين تجربة المستخدم</h3>
+    <p>تحليل وتطوير التجربة لتحسين فعالية الموقع وزيادة التفاعل مع العملاء.</p>
+   </div>
+  </div>
+ </section>
 
-      <!-- Call to Action -->
-      <section class="mt-10">
-        <router-link to="/contact" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700 transition duration-300" data-aos="zoom-in">
-          تواصل معنا الآن
-        </router-link>
-      </section>
-    </main>
+ <!-- لماذا نحن -->
+ <section class="text-center py-8 px-4">
+  <h2 class="text-2xl font-bold mb-4">لماذا البوصلة؟</h2>
+  <div class="space-y-4">
+   <div class="bg-white text-black py-2 px-4 rounded">خبرة تمتد لأكثر من 2 سنوات</div>
+   <div class="bg-white text-black py-2 px-4 rounded">نتائج احترافية بأقل تكلفة</div>
+   <div class="bg-white text-black py-2 px-4 rounded">دعم فني على مدار الساعة</div>
+   <div class="bg-white text-black py-2 px-4 rounded">تجربة مستخدم مميزة</div>
+  </div>
+ </section>
 
-    <hr class="my-10 border-purple-500" />
-
-    <!-- Footer -->
-     <Media />
   </div>
 </template>
-
-<script>
- import Media from "./Media.vue";
-export default {
-components:{
- Media
-},
-  data() {
-    return {
-      // Add any relevant data if needed
-    };
-  },
-}
-</script>
-
 <style scoped>
-.neon {
-  text-shadow: 0 0 5px #4b006e, 0 0 10px #4b006e, 0 0 15px #4b006e, 0 0 20px #4b006e;
-}
-*{
-  color:#fff;
-}
+.body {
+   font-family: 'Cairo', sans-serif;
+   background: linear-gradient(90deg, #3333cc, #330099);
+   user-select: none;
+  }
+  img{
+   border-radius: 7px;
+  }
 </style>

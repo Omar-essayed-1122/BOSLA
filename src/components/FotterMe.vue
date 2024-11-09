@@ -11,6 +11,7 @@
     <div class="footer-section">
       <h5>تواصل معنا</h5>
       <p><i class="fa fa-phone"></i> +20 1212540775</p>
+      <p><i class="fa fa-phone"></i> +20 1552480067</p>
       <p><i class="fa fa-envelope"></i> bosla.co.1@gmail.com</p>
       <p><i class="fa fa-map-marker-alt"></i> الإسكندرية، مصر</p>
     </div>

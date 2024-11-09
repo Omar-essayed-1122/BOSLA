@@ -23,7 +23,8 @@ import 'vuetify/dist/vuetify.min.css';
 import ElementPlus from 'element-plus';
 import 'element-plus/theme-chalk/index.css';
 
-// إنشاء التطبيق
+// Cairo font
+
 const app = createApp(App);
 
 // استخدام المكتبات

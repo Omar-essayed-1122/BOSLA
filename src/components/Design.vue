@@ -1,87 +1,70 @@
 <template>
-  <div class="flex flex-col items-center justify-center min-h-screen bg-black text-white">
-    <!-- Header -->
-    <header class="w-full p-5 text-center bg-black">
-      <h1 class="text-4xl font-bold neon" data-aos="fade-down">خدمات التصميم والجرافيك</h1>
-      <p class="mt-2 text-xl" data-aos="fade-down">نحن نقدم تصميمات مبتكرة وجذابة تلبي احتياجات عملائنا.</p>
-    </header>
+  <div class="body">
+     <header class="text-center py-4">
+  <img src="@/assets/res/img/icons2/1000519005-removebg-preview.png" alt="">
+ </header>
 
-    <!-- Main Content -->
-    <main class="flex flex-col items-center p-5">
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">لماذا تختار تصميمات EL BOSLA؟</h2>
-        <p class="mt-2">نحن نقدم حلول تصميم إبداعية تساهم في تحسين الهوية البصرية لمشاريعك وتجعلها تبرز في سوق العمل.</p>
-      </section>
+ <header class="text-center py-4">
+  <h1 class="text-3xl font-bold">البوصلة - الجرافيك ديزاين</h1>
+  <p>نقدم لك حلولاً إبداعية لتطوير هوية بصرية قوية وتصاميم سوشيال ميديا مبتكرة</p>
+ </header>
 
-      <!-- Services Offered -->
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">خدمات التصميم والجرافيك</h2>
-        <ul class="mt-5 list-disc list-inside">
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تصميم الشعار (Logo Design)</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تصميم المواد الدعائية (Brochures, Flyers)</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تصميمات الوسائط الاجتماعية (Social Media Graphics)</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>تصميم واجهات المواقع (Web UI Design)</li>
-          <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i>خدمة الفيديوهات باستخدام تقنية Whiteboard</li>
-        </ul>
-      </section>
+ <!-- مقدمة -->
+ <section class="text-center py-8 px-4">
+  <h2 class="text-2xl font-bold mb-4">لماذا تحتاج إلى هوية بصرية قوية وتصاميم سوشيال ميديا احترافية؟</h2>
+  <p class="mb-4">الهوية البصرية هي عامل رئيسي في بناء العلامة التجارية، وهي ما يميز نشاطك التجاري عن المنافسين. من خلال تصاميم مبتكرة وجذابة، نساعدك على الوصول لجمهورك المستهدف وبناء تواصل أقوى معهم.</p>
+ </section>
 
-      <!-- Creative Process -->
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">عملية التصميم</h2>
-        <p class="mt-2">نستخدم منهجية مرنة تبدأ من فهم احتياجات العميل، مروراً بتقديم الأفكار، وحتى تنفيذ التصميم بشكل احترافي.</p>
-      </section>
+ <!-- خدماتنا -->
+ <section class="text-center py-8 px-4">
+  <h2 class="text-2xl font-bold mb-4">خدماتنا في الجرافيك ديزاين</h2>
+     <div class="flex flex-col md:flex-row md:space-x-8 items-center space-y-4 md:space-y-0">
+   <div class="text-center p-4 bg-black rounded-lg">
+    <img alt="تصميم الهوية" class="mx-auto mb-2" src="@/assets/res/img/icons2/1000518773-removebg-preview.png" width="260" />
+    <h3 class="text-xl font-semibold mb-2">تطوير الهوية البصرية</h3>
+    <p>إنشاء هوية بصرية متكاملة تشمل الألوان والخطوط والتصاميم التي تعبر عن علامتك.</p>
+   </div>
+   <div class="text-center p-4 bg-black rounded-lg">
+    <img alt="تصاميم السوشيال ميديا" class="mx-auto mb-2" 
+    src="@/assets/res/img/icons2/1000519015-removebg-preview.png" width="260" />
+    <h3 class="text-xl font-semibold mb-2">تصاميم السوشيال ميديا</h3>
+    <p>تصاميم جذابة ومخصصة لمنصات التواصل الاجتماعي، مصممة لتجذب التفاعل.</p>
+   </div>
 
-      <!-- AI Integration -->
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">استخدام الذكاء الاصطناعي في التصميم</h2>
-        <p class="mt-2">نستفيد من أنظمة الذكاء الاصطناعي لتحليل اتجاهات التصميم وتقديم اقتراحات مبتكرة تساهم في تحسين جودة التصاميم.</p>
-      </section>
 
-      <!-- Video Service -->
-      <section class="mt-10" data-aos="fade-up">
-        <h2 class="text-2xl font-bold">خدمة الفيديوهات Whiteboard</h2>
-        <p class="mt-2">نقدم خدمة إنتاج الفيديوهات باستخدام تقنية Whiteboard التي تساعد على توضيح الأفكار بطريقة مرئية وجذابة. هذه الخدمة مثالية للشرائح التعليمية والعروض الترويجية.</p>
-      </section>
+      <div class="text-center p-4 bg-black rounded-lg">
+       <img alt="تصميم شعار" class="mx-auto mb-2" src="@/assets/res/img/icons2/1000519011-removebg-preview.png" width="230" />
+       <h3 class="text-xl font-semibold mb-2">تصميم الشعار (Logo)</h3>
+       <p>تصاميم شعارات فريدة تعكس هوية العلامة التجارية وتكون عالقة في أذهان الجمهور.</p>
+      </div>
+  </div>
+ </section>
 
-      <!-- Portfolio Section -->
-      <!-- Call to Action -->
-      <section class="mt-10">
-        <router-link to="/contact" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700 transition duration-300" data-aos="zoom-in">
-          تواصل معنا الآن
-        </router-link>
-      </section>
-    </main>
+ <!-- لماذا نحن -->
+ <section class="text-center py-8 px-4">
+  <h2 class="text-2xl font-bold mb-4">لماذا اختيار البوصلة؟</h2>
+  <div class="space-y-4">
+   <div class="bg-white text-black py-2 px-4 rounded">فريق ذو خبرة طويلة في تصميم الهوية البصرية</div>
+   <div class="bg-white text-black py-2 px-4 rounded">ابتكار وحلول مخصصة لكل عميل</div>
+   <div class="bg-white text-black py-2 px-4 rounded">نتائج احترافية تعكس هوية علامتك بدقة</div>
+  </div>
+ </section>
 
-    <hr class="my-10 border-purple-500" />
+ <!-- Footer -->
+ 
 
-    <!-- Footer -->
-   <Media />
+    
   </div>
 </template>
 
-<script>
- import Media from "./Media.vue";
-export default {
-components:{
- Media
-},
-  data() {
-    return {
-      // Add any relevant data if needed
-    };
-  },
-}
-</script>
 
 <style scoped>
-.neon {
-  text-shadow: 0 0 5px #4b006e, 0 0 10px #4b006e, 0 0 15px #4b006e, 0 0 20px #4b006e;
-}
-
-.portfolio-item {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-*{
-color:#fff
-}
+.body {
+   font-family: 'Cairo', sans-serif;
+   background: linear-gradient(90deg, #3333cc, #330099);
+   user-select: none;
+  }
+  img {
+   border-radius: 7px;
+  }
 </style>
