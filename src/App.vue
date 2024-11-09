@@ -27,7 +27,8 @@
 }
 *{
   font-family: 'Cairo',sans-serif;
-
+ font-size:17px;
+font-weight:700;
 }
 
   body{
@@ -63,6 +64,6 @@ nav {
   margin-bottom:5px;
 }
 h1{
-  font-size:24px;
+  font-size:18px;
 }
 </style>
