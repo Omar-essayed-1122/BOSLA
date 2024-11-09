@@ -27,8 +27,7 @@
 }
 *{
   font-family: 'Cairo',sans-serif;
-font-size:20px;
-font-weight:700;
+
 }
 
   body{
