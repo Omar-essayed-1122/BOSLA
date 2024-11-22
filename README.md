@@ -1,4 +1,4 @@
-# frontend
+# Bosla
 
 ## Project setup
 ```
@@ -16,4 +16,4 @@ npm run build
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Configuration Reference](bosla.icu).
