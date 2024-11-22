@@ -5,7 +5,6 @@ const HomeV = () => import('../views/HomeView.vue');
 const ContactV = () => import('../views/ContactV.vue');
 const MarketingV = () => import('../views/MarketingV.vue');
 const DesignV = () => import('../views/DesignV.vue');
-const ContentV = () => import('../views/ContentV.vue');
 const ProgrammingV = () => import('../views/ProgrammingV.vue');
 const Deals = () => import('../views/Deals.vue');
 
@@ -44,15 +43,6 @@ const routes = [
     meta: {
       title: 'البوصلة | خدمات التصميم',
       description: 'نقدم خدمات تصميم إبداعية تبرز هوية علامتك التجارية وتجذب انتباه العملاء المحتملين. تصاميم مبتكرة ومتميزة تتماشى مع أحدث الاتجاهات في التصميم.'
-    }
-  },
-  {
-    path: '/services/Content',
-    name: 'Content',
-    component: ContentV,
-    meta: {
-      title: 'البوصلة | خدمات كتابة المحتوى',
-      description: 'خدمات كتابة المحتوى ذات الجودة العالية التي تساعد في تعزيز تواجدك الرقمي وتقديم قيمة حقيقية لجمهورك. نحن نقدم محتوى مبتكر يحقق أهدافك التسويقية.'
     }
   },
   {
