@@ -69,13 +69,12 @@
         </b-alert>
       </form>
     </main>
-    <Media />
+
   </div>
 </template>
 
 <script>
 import { BAlert, BButton, BFormInput, BFormSelect, BFormTextarea } from 'bootstrap-vue-3';
-import Media from "./Media.vue";
 
 export default {
   components: {
@@ -84,7 +83,7 @@ export default {
     BFormInput,
     BFormSelect,
     BFormTextarea,
-    Media,
+    
   },
   data() {
     return {
