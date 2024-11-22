@@ -63,7 +63,7 @@ export default {
             "زيادة ولاء العملاء"
           ],
           price: "800 ج.م",
-          image: require("@/assets/res/img/offers/offer2.jpg")
+          
         },
         {
           title: "تصميم واجهة موقع جذابة",
@@ -74,7 +74,7 @@ export default {
             "متوافق مع محركات البحث"
           ],
           price: "1200 ج.م",
-          image: require("@/assets/res/img/offers/offer3.jpg")
+          
         }
       ]
     };
