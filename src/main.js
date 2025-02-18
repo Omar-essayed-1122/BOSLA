@@ -16,11 +16,9 @@ const app = createApp(App);
 
 app.use(router);
 
-if (process.client) {
-  // استخدام BootstrapVue 3 بشكل كسول
-  import('bootstrap-vue-3').then((BootstrapVue3) => {
-    app.use(BootstrapVue3);
-  });
+import BootstrapVue3 from 'bootstrap-vue-3';
+app.use(BootstrapVue3);
+
 
   // تحميل Google Analytics بشكل كسول
   import('vue-gtag').then((VueGtag) => {
