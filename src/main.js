@@ -26,7 +26,7 @@ app.use(BootstrapVue3);
       config: { id: 'G-ZRWXVV69P4' }
     }, router);
   });
-}
+
 
 // تركيب التطبيق
 app.mount('#app');
